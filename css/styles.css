@@ -303,6 +303,11 @@ template {
 body {
   font-family: 'Merriweather Sans', sans-serif; }
 
+@media (min-width: 768px) {
+  body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
 p {
   color: #8e8e8e;
   padding: 5px 60px;
@@ -375,14 +380,20 @@ p, .headline--secondary {
 .nav {
   font-size: 1.3em;
   color: #4f4f4f;
-  padding-right: 40px; }
+  padding-right: 40px;
+  list-style-type: none; }
+  @media (min-width: 769px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: spacebetween; } }
   .nav a {
     text-align: center;
     color: #7a7a7a;
     text-decoration: none; }
 
 .nav__item {
-  color: white;
   text-decoration: none;
   padding: 15px; }
 
@@ -439,7 +450,15 @@ a:hover {
   display: none; }
 
 .grid__col--12 {
-  display: block; }
+  display: block;
+  padding: 0 15px;
+  width: 100%; }
+  @media (min-width: 769px) {
+    .grid__col--12 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between; } }
 
 .btn--default {
   background: #4feaff; }

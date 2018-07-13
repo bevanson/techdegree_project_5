@@ -1,12 +1,16 @@
 
 .grid__col--12 {
   display: block;
+  padding: 0 15px;
+  width: 100%;
+  @include mq(medium) {
+    @include flexbox(flex, row, nowrap, space-between);
+  }
 }
 
 .btn--default {
   @extend %grid-styles;
   background: $color-blue;
-
 }
 
 .btn--success {

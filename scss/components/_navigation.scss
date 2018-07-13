@@ -3,6 +3,10 @@
   font-size: 1.3em;
   color: $font-color-dark;
   padding-right: 40px;
+  list-style-type: none;
+  @include mq(medium) {
+    @include flexbox(flex, row, nowrap, spacebetween);
+  }
   a {
     text-align: center;
     color: $color-grey;
@@ -11,7 +15,6 @@
 }
 
 .nav__item {
-  color: white;
   text-decoration: none;
   padding: 15px;
 
