@@ -1,0 +1,28 @@
+
+.nav {
+  font-size: 1.3em;
+  color: $font-color-dark;
+  padding-right: 40px;
+  a {
+    text-align: center;
+    color: $color-grey;
+    text-decoration: none;
+  }
+}
+
+.nav__item {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+
+}
+
+
+.nav__item:hover {
+    border-radius: 10px;
+    background-color: $color-teal;
+  }
+
+a:hover {
+  color: $color-white;
+}

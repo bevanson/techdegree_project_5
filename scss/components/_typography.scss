@@ -1,0 +1,36 @@
+
+
+
+.headline--primary {
+  text-align: left;
+  color: $color-teal;
+  padding-left: 75px;
+}
+
+.headline--secondary {
+  @extend %text;
+  padding: 20px 85px 15px 60px;
+  color: $font-color-light;
+  font-weight: 300;
+}
+
+
+.link {
+  text-decoration: none;
+  color: $color-blue;
+}
+
+.link:hover {
+  @extend %link-hover;
+}
+
+.blockquote {
+  text-align: left;
+  margin-left: 85px;
+  padding-left: 15px;
+  font-size: 1.8em;
+  border-left: 10px solid $color-teal;
+  font-style: italic;
+  color: #8e8e8e;
+  font-weight: 200;
+}

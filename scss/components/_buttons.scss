@@ -1,0 +1,30 @@
+
+.grid__col--12 {
+  display: block;
+}
+
+.btn--default {
+  @extend %grid-styles;
+  background: $color-blue;
+
+}
+
+.btn--success {
+  @extend %grid-styles;
+  background: $emerald;
+}
+
+.btn--error {
+  @extend %grid-styles;
+  background: $sunglo;
+}
+
+.btn--warning {
+  @extend %grid-styles;
+  background: coral;
+}
+
+.btn--info {
+  @extend %grid-styles;
+  background: $purple-majesty;
+}

@@ -1,0 +1,29 @@
+
+
+%text-centered {
+  text-align: center;
+}
+
+%text {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+%img-placement {
+  padding-top: 15px;
+  padding-bottom: 23px;
+}
+
+%link-hover {
+  color: $color-light-grey;
+  text-decoration: none;
+}
+
+%grid-styles {
+  border: none;
+  width: 85%;
+  color: $color-white;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

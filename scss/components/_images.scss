@@ -1,0 +1,10 @@
+
+
+.img--frame {
+  border: 2px solid $color-light-grey;
+  padding: 20px;
+}
+
+.img--avatar {
+  @extend %img-placement;
+}

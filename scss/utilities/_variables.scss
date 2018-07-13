@@ -1,0 +1,53 @@
+
+// Color variables
+
+$color-grey: #7a7a7a;
+$color-white: #fff;
+$color-teal: #63e8c4;
+$color-blue: #4feaff;
+$color-light-grey: #ddd;
+
+
+// Font colors
+
+$font-color-dark: #4f4f4f;
+//$font-color-med: #8e8e8e;
+$font-color-light: #c1c1c1;
+
+// Fonts
+
+$font-main: 'Merriweather Sans', sans-serif;
+
+
+$fountain-blue  : #52bab3;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
+
+
+
+
+// UI colors
+
+$ui-colors: (
+  default : $fountain-blue,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
+// media queries
+
+$breakpoint-sm: 1px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1400px;
+
+ // Grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;

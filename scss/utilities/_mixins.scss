@@ -1,0 +1,37 @@
+
+
+
+// Flexbox Mixin
+
+@mixin flexbox (
+$disp: flex,
+$dir: null,
+$wrap: null,
+$just: null){
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+//Media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $breakpoint-sm) and (max-width: $brkpnt-m) {
+      @content;
+    }
+  }
+
+  @else if $break == "medium" {
+    @media (min-width: $breakpoint-md + 1) {
+      @content;
+    }
+  }
+
+  @else if $break == "large" {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}

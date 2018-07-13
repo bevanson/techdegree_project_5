@@ -1,0 +1,19 @@
+
+
+.form {
+  @extend %text-centered;
+}
+
+.form__input {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 5px solid $color-teal;
+}
+
+.form__label--hidden {
+  display: none;
+}

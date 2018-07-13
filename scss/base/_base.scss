@@ -1,0 +1,19 @@
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %text-centered;
+  font-family: 'Merriweather Sans', sans-serif;;
+}
+
+p {
+  @extend %text;
+  color: #8e8e8e;
+  padding: 5px 60px;
+  line-height: 1.4em;
+  font-weight: 300;
+}
