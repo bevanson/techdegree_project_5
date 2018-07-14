@@ -7,10 +7,14 @@
   }
 }
 
-.theme__colors {
-  
+.grid__col {
+    @each $col, $color in $grid-colors {
+        &--#{$col}.theme__colors {
+          
+    }
+  }
 }
 
-// @media (min-width: 480px) {
-//   @include flexbox($dir: row);
-// }
+[class^='grid-'] {
+
+}
