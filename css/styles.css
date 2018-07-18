@@ -314,6 +314,10 @@ template {
   line-height: 1.4em;
   font-weight: 300; }
 
+@media (min-width: 768px) {
+  .card {
+    line-height: 1.1;
+    font-size: .8em; } }
 .container, .form {
   text-align: center; }
 
@@ -376,6 +380,12 @@ template {
 .img--frame {
   border: 2px solid #ddd;
   padding: 20px; }
+  @media (min-width: 769px) {
+    .img--frame {
+      margin: 0; } }
+@media (min-width: 769px) {
+  .img--avatar {
+    margin-right: 25px; } }
 
 .nav {
   font-size: 1.3em;
@@ -407,12 +417,16 @@ a:hover {
 .headline--primary {
   text-align: left;
   color: #63e8c4;
-  padding-left: 75px; }
-
+  padding-left: 75px;
+  line-height: 1.0; }
 .headline--secondary {
   padding: 20px 85px 15px 60px;
   color: #c1c1c1;
   font-weight: 300; }
+  @media (min-width: 769px) {
+    .headline--secondary {
+      margin: 15px;
+      padding: 0; } }
 
 .link {
   text-decoration: none;
@@ -422,11 +436,16 @@ a:hover {
   text-align: left;
   margin-left: 85px;
   padding-left: 15px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   border-left: 10px solid #63e8c4;
   font-style: italic;
   color: #8e8e8e;
   font-weight: 200; }
+  @media (min-width: 769px) {
+    .blockquote {
+      margin: 10px;
+      font-size: 1.2em;
+      line-height: 1.1; } }
 
 .grid__row {
   width: 100%; }
@@ -464,6 +483,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--12.theme__colors {
+      text-align: center; } }
 .grid__col--8.theme__colors {
   background-color: #f28b54;
   margin-left: auto;
@@ -477,6 +499,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--8.theme__colors {
+      text-align: center; } }
 .grid__col--7.theme__colors {
   background-color: #e88d7d;
   margin-left: auto;
@@ -490,6 +515,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--7.theme__colors {
+      text-align: center; } }
 .grid__col--6.theme__colors {
   background-color: #3ea7c4;
   margin-left: auto;
@@ -503,6 +531,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--6.theme__colors {
+      text-align: center; } }
 .grid__col--5.theme__colors {
   background-color: #5dc687;
   margin-left: auto;
@@ -516,6 +547,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--5.theme__colors {
+      text-align: center; } }
 .grid__col--4.theme__colors {
   background-color: #6bebff;
   margin-left: auto;
@@ -529,6 +563,9 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--4.theme__colors {
+      text-align: center; } }
 .grid__col--3.theme__colors {
   background-color: #ffc4ff;
   margin-left: auto;
@@ -542,11 +579,14 @@ a:hover {
   padding-top: 6px;
   padding-left: 5px;
   text-align: left; }
+  @media (min-width: 769px) {
+    .grid__col--3.theme__colors {
+      text-align: center; } }
 
 @media (min-width: 769px) {
   .grid__col--12 {
-    display: flex;
-    flex-basis: 100%; } }
+    display: column;
+    flex-basis: 99%; } }
 
 @media (min-width: 769px) {
   .grid__col--6 {
@@ -592,6 +632,9 @@ a:hover {
   padding-bottom: 10px;
   border: none;
   border-bottom: 5px solid #63e8c4; }
+  @media (min-width: 769px) {
+    .form__input {
+      margin-left: 5%; } }
 
 .form__label--hidden {
   display: none; }

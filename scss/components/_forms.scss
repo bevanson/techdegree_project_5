@@ -12,6 +12,9 @@
   padding-bottom: 10px;
   border: none;
   border-bottom: 5px solid $color-teal;
+  @include mq(medium) {
+    margin-left: 5%;
+  }
 }
 
 .form__label--hidden {

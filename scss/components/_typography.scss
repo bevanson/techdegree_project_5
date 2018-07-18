@@ -1,17 +1,21 @@
 
-
-
-.headline--primary {
-  text-align: left;
-  color: $color-teal;
-  padding-left: 75px;
-}
-
-.headline--secondary {
-  @extend %text;
-  padding: 20px 85px 15px 60px;
-  color: $font-color-light;
-  font-weight: 300;
+.headline {
+  &--primary {
+    text-align: left;
+    color: $color-teal;
+    padding-left: 75px;
+    line-height: 1.0;
+  }
+  &--secondary {
+    @extend %text;
+    padding: 20px 85px 15px 60px;
+    color: $font-color-light;
+    font-weight: 300;
+    @include mq(medium){
+        margin: 15px;
+        padding: 0;
+    }
+  }
 }
 
 
@@ -28,9 +32,14 @@
   text-align: left;
   margin-left: 85px;
   padding-left: 15px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   border-left: 10px solid $color-teal;
   font-style: italic;
   color: #8e8e8e;
   font-weight: 200;
+  @include mq(medium) {
+    margin: 10px;
+    font-size: 1.2em;
+    line-height: 1.1;
+  }
 }
