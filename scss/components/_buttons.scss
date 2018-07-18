@@ -32,3 +32,16 @@
   @extend %grid-styles;
   background: $purple-majesty;
 }
+
+
+.btn {
+  @include mq(medium) {
+    &--default,
+    &--success,
+    &--warning,
+    &--error,
+    &--info {
+      margin-right: 30px;
+    }
+  }
+}

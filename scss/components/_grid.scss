@@ -7,14 +7,84 @@
   }
 }
 
+.grid__col--6.theme__colors:last-of-type,
+.grid__col--4.theme__colors:last-of-type,
+.grid__col--3.theme__colors:last-of-type,
+.grid__col--7.theme__colors,
+.grid__col--12.theme__colors {
+  margin-bottom: 50px;
+  @include mq(medium) {
+    margin-bottom: 15px;
+  }
+}
+
+
+
 .grid__col {
     @each $col, $color in $grid-colors {
         &--#{$col}.theme__colors {
-          
+          background-color: $color;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 5px;
+          border: none;
+          width: 90%;
+          height: 35px;
+          border-radius: 5px;
+          color: $color-grey;
+          padding-top: 6px;
+          padding-left: 5px;
+          text-align: left;
     }
   }
 }
 
-[class^='grid-'] {
+// Grid color layout
 
+.grid__col--12 {
+  @include mq(medium){
+    @include flexbox(flex);
+    flex-basis: 100%;
+  }
+}
+
+.grid__col--6 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 49%;
+  }
+}
+.grid__col--4 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 32%;
+  }
+}
+
+.grid__col--3 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 24%;
+  }
+}
+
+.grid__col--8 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 65%;
+  }
+}
+
+.grid__col--5 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 34%;
+  }
+}
+
+.grid__col--7 {
+  @include mq(medium) {
+    @include flexbox(column, space-between);
+    flex-basis: 64%;
+  }
 }
