@@ -341,6 +341,11 @@ template {
   border-radius: 5px;
   margin-bottom: 20px; }
 
+.img--frame:after, .img--avatar:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 @media (min-width: 768px) {
   .grid__col--1 {
     width: 6.5%; }
@@ -382,10 +387,12 @@ template {
   padding: 20px; }
   @media (min-width: 769px) {
     .img--frame {
-      margin: 0; } }
+      margin: 0;
+      position: relative;
+      z-index: 1; } }
 @media (min-width: 769px) {
   .img--avatar {
-    margin-right: 25px; } }
+    position: relative; } }
 
 .nav {
   font-size: 1.3em;
@@ -592,7 +599,8 @@ a:hover {
   .grid__col--6 {
     display: column;
     flex-direction: space-between;
-    flex-basis: 49%; } }
+    flex-basis: 49%;
+    width: 100%; } }
 
 @media (min-width: 769px) {
   .grid__col--4 {

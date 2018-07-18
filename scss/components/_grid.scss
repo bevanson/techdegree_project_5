@@ -55,6 +55,7 @@
   @include mq(medium) {
     @include flexbox(column, space-between);
     flex-basis: 49%;
+    width: 100%;
   }
 }
 .grid__col--4 {
